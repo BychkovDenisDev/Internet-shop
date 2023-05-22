@@ -2,12 +2,207 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+   <link type="image/png" sizes="32x32" rel="icon" href="./assest/favicon/sportswear_icon.png">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
    <link rel="stylesheet" href="./pages/style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Internet Shop</title>
+   <title>Sportswear</title>
 </head>
 <body>
-   <script src="./pages/script.js"></script>
+   <div class="background">
+      <header class="header">
+         <div class="container">
+            <div class="header-inner">
+               <div header-logo>
+                  <a href="">
+                     <img src="./assest/img/logo.svg" alt="logo">
+                  </a>
+               </div>
+               <nav class="header-nav">
+                  <ul class="nav-list">
+                     <li class="nav-item">
+                           <a href="" class="nav-link">Для мужчин</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="" class="nav-link">Для женщин</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="" class="nav-link">Для детей</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="" class="nav-link">Оплата</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="" class="nav-link">Доставка</a>
+                     </li>
+                  </ul> 
+                  <button class="btn-Card">
+                     <img src="./assest/img/Buy.svg" alt="Buy">
+                  </button>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <section class="preview">
+         <div class="container"> 
+            <div class="sale-container">
+               <div class="sale-info">
+                  <p class="sale-description">Весенняя распродажа</p>
+                  <h1 class="sale-title">СКИДКИ ДО 90%</h1>
+                  <button class="sale-btn">
+                     Смотреть модели
+                  </button>
+               </div>
+               <div class="sale-box-container">
+                  <div class="box-price">
+                     <strike class="box-price-old">11 900 ₽ </strike>
+                     <p class="box-price-new">2 900 ₽</p>
+                  </div>
+                  <div class="box-price-image">
+                     <img class="image" src="./assest/img/running_shoes.png" alt="shoes">
+                  </div>
+               </div>
+            </div>
+            <div class="dots-container">
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+               <span class="dot"></span>
+            </div>
+         </div>
+      </section>
+   </div>
+   <div class="background-notification">
+      <div class="container">
+         <div class="notification">
+            <h2 class="notification-discription"><span>Бесплатная доставка</span> от 4000₽</h2>
+            <p class="notification-text">Сделайте заказ и получите подарок!</p>
+         </div>
+      </div>
+   </div>
+   <main class="main">
+      <div class="container">
+         <section class="man-clothing">
+            <div class="wrapper man-clothing-wrapper">
+               <h2 class="man-clothing-title">Мужская коллекция</h2>
+               <div class="slider">
+                  <button class="slider-next button button-circle">
+                     <span class="ico ico-arrow-next"></span>
+                  </button>
+
+                  <div class="slider-wrapper">
+                     <div class="slider-carousel">
+                        <div class="slider-item" id="item-left"></div>
+                        <div class="slider-item" id="item-active"></div>
+                        <div class="slider-item" id="item-right"></div>
+                     </div>
+                  </div>
+                  
+                  <button class="slider-prev button button-circle">
+                     <span class="ico ico-arrow-prev"></span>
+                  </button>
+               </div>
+            </div>
+         </section>
+      </div>
+      <div class="background-notification">
+         <div class="container">
+            <div class="notification">
+               <h2 class="notification-discription">Все лучшее</h2>
+               <p class="notification-text">Сделайте заказ и получите подарок!</p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <section class="women-clothing">
+            <div class="wrapper women-clothing-wrapper">
+               <h2 class="women-clothing-title">Женская коллекция</h2>
+                  <div class="clothing-count">
+                     <div class="clothing-inner">
+                        <div class="card">
+                           <img src="./assest/img/woman/image1.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image2.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image3.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image4.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image5.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image6.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image7.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image8.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image9.jpg" alt="woman1">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        
+                     </div>
+                  </div>
+            </div>
+         </section>
+      </div>
+      <div class="background-notification">
+         <div class="container">
+            <div class="notification">
+               <h2 class="notification-discription"><span>Бесплатная доставка</span> от 4000₽</h2>
+               <p class="notification-text">Сделайте заказ и получите подарок!</p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <section class="kids-clothing">
+            <div class="wrapper kids-clothing-wrapper">
+               <h2 class="kids-clothing-title">Детская коллекция</h2>
+
+            </div>
+         </section>
+      </div>
+   </main>
+
+   <script src="./pages/js/card.js" type="module"></script>
+   <script src="./pages/js/data.js" type="module"></script>
+   <script src="./pages/js/slider.js" type="module"></script>
 </body>
 </html>
