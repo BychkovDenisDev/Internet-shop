@@ -5,10 +5,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
    <link type="image/png" sizes="32x32" rel="icon" href="./assest/favicon/sportswear_icon.png">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-   <link rel="stylesheet" href="./pages/style.css">
+   <link rel="stylesheet" href="./pages/style.css" id="theme">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Sportswear</title>
 </head>
@@ -25,28 +26,46 @@
                <nav class="header-nav">
                   <ul class="nav-list">
                      <li class="nav-item">
-                           <a href="" class="nav-link">Для мужчин</a>
+                           <a href="#man" class="nav-link">Для мужчин</a>
                      </li>
                      <li class="nav-item">
-                        <a href="" class="nav-link">Для женщин</a>
+                        <a href="#women" class="nav-link">Для женщин</a>
                      </li>
                      <li class="nav-item">
-                        <a href="" class="nav-link">Для детей</a>
+                        <a href="#kids" class="nav-link">Для детей</a>
                      </li>
                      <li class="nav-item">
-                        <a href="" class="nav-link">Оплата</a>
+                        <a href="#notification" class="nav-link">Оплата</a>
                      </li>
                      <li class="nav-item">
                         <a href="" class="nav-link">Доставка</a>
                      </li>
                   </ul> 
-                  <button class="btn-Card">
-                     <img src="./assest/img/Buy.svg" alt="Buy">
-                  </button>
                </nav>
+               <button class="theme-btn">
+                  <span class="material-symbols-outlined">
+                     wb_sunny
+                  </span>
+               </button>
+               <button class="header-burger header-burger-hidden header-burger-closed">
+                  <span class="header-burger-line header-burger-line-first"></span>
+                  <span class="header-burger-line header-burger-line-second"></span>
+                  <span class="header-burger-line header-burger-line-third"></span>
+               </button>
             </div>
          </div>
       </header>
+      <div class="burger-menu">
+         <nav class="burger-nav">
+            <ul class="burger-list">
+               <li class="burger-item"><a href="#man" class="burger-link burger-link-active">Для мужчин</a></li>
+               <li class="burger-item"><a href="#women" class="burger-link burger-link-active">Для женщин</a></li>
+               <li class="burger-item"><a href="#kids" class="burger-link burger-link-active">Для детей</a></li>
+               <li class="burger-item"><a href="#notification" class="burger-link burger-link-active">Оплата</a></li>
+               <li class="burger-item"><a href="" class="burger-link burger-link-active">Доставка</a></li>
+            </ul>
+         </nav>
+      </div>
       <section class="preview">
          <div class="container"> 
             <div class="sale-container">
@@ -86,12 +105,12 @@
    </div>
    <main class="main">
       <div class="container">
-         <section class="man-clothing">
+         <section class="man-clothing" id="man">
             <div class="wrapper man-clothing-wrapper">
                <h2 class="man-clothing-title">Мужская коллекция</h2>
                <div class="slider">
                   <button class="slider-next button button-circle">
-                     <span class="ico ico-arrow-next"></span>
+                     <img src="./assest/img/ico/arrow.svg" alt="">
                   </button>
 
                   <div class="slider-wrapper">
@@ -103,22 +122,14 @@
                   </div>
                   
                   <button class="slider-prev button button-circle">
-                     <span class="ico ico-arrow-prev"></span>
+                     <img class="ico-btn" src="./assest/img/ico/arrow.svg" alt="">
                   </button>
                </div>
             </div>
          </section>
       </div>
-      <div class="background-notification">
-         <div class="container">
-            <div class="notification">
-               <h2 class="notification-discription">Все лучшее</h2>
-               <p class="notification-text">Сделайте заказ и получите подарок!</p>
-            </div>
-         </div>
-      </div>
       <div class="container">
-         <section class="women-clothing">
+         <section class="women-clothing" id="women">
             <div class="wrapper women-clothing-wrapper">
                <h2 class="women-clothing-title">Женская коллекция</h2>
                   <div class="clothing-count">
@@ -130,54 +141,71 @@
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image2.jpg" alt="woman1">
+                           <img src="./assest/img/woman/image2.jpg" alt="woman2">
                            <h4 class="card-title">Спортивная кофта</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image3.jpg" alt="woman1">
-                           <h4 class="card-title">Спортивная кофта</h4>
+                           <img src="./assest/img/woman/image3.jpg" alt="woman3">
+                           <h4 class="card-title">Спортивный костюм</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image4.jpg" alt="woman1">
-                           <h4 class="card-title">Спортивная кофта</h4>
+                           <img src="./assest/img/woman/image4.jpg" alt="woman4">
+                           <h4 class="card-title">Спортивные шорты</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image5.jpg" alt="woman1">
-                           <h4 class="card-title">Спортивная кофта</h4>
+                           <img src="./assest/img/woman/image5.jpg" alt="woman5">
+                           <h4 class="card-title">Спортивные штаны</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image6.jpg" alt="woman1">
-                           <h4 class="card-title">Спортивная кофта</h4>
+                           <img src="./assest/img/woman/image6.jpg" alt="woman6">
+                           <h4 class="card-title">Спортивная кроссовки</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image7.jpg" alt="woman1">
-                           <h4 class="card-title">Спортивная кофта</h4>
+                           <img src="./assest/img/woman/image7.jpg" alt="woman7">
+                           <h4 class="card-title">Спортивная футболка</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image8.jpg" alt="woman1">
-                           <h4 class="card-title">Спортивная кофта</h4>
+                           <img src="./assest/img/woman/image8.jpg" alt="woman8">
+                           <h4 class="card-title">Спортивная футболка</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
                         <div class="card">
-                           <img src="./assest/img/woman/image9.jpg" alt="woman1">
-                           <h4 class="card-title">Спортивная кофта</h4>
+                           <img src="./assest/img/woman/image9.jpg" alt="woman9">
+                           <h4 class="card-title">Спортивная куртка</h4>
                            <p class="card-date">22.05.2023</p>
                            <button class="button card-button">Купить</button>
                         </div>
-                        
+                        <div class="card">
+                           <img src="./assest/img/woman/image10.jpg" alt="woman10">
+                           <h4 class="card-title">Спортивная штаны</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image11.jpg" alt="woman11">
+                           <h4 class="card-title">Спортивная кроссовки</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/woman/image12.jpg" alt="woman12">
+                           <h4 class="card-title">Спортивная кроссовки</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
                      </div>
                   </div>
             </div>
@@ -185,22 +213,114 @@
       </div>
       <div class="background-notification">
          <div class="container">
-            <div class="notification">
-               <h2 class="notification-discription"><span>Бесплатная доставка</span> от 4000₽</h2>
-               <p class="notification-text">Сделайте заказ и получите подарок!</p>
+            <div class="notification-container" id="notification">
+               <h2 class="notification-discription inner">Получайте скидки и подарки</h2>
+               <input type="text" class="input" placeholder="Ваш email">
+               <button type="button" class="input-btn">
+                  <p class="input-btn-title">Подписаться</p>
+               </button>
             </div>
          </div>
       </div>
       <div class="container">
-         <section class="kids-clothing">
-            <div class="wrapper kids-clothing-wrapper">
+         <section class="kids-clothing" id="kids">
+            <div class="wrapper wkids-clothing-wrapper">
                <h2 class="kids-clothing-title">Детская коллекция</h2>
-
+                  <div class="clothing-count">
+                     <div class="clothing-inner">
+                        <div class="card">
+                           <img src="./assest/img/kids/image1.jpg" alt="kid1">
+                           <h4 class="card-title">Спортивная футболка</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/kids/image2.jpg" alt="kid2">
+                           <h4 class="card-title">Спортивная курта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/kids/image3.jpg" alt="kid3">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/kids/image4.jpg" alt="kid4">
+                           <h4 class="card-title">Спортивная безрукавка</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/kids/image5.jpg" alt="kid5">
+                           <h4 class="card-title">Спортивная кофта</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/kids/image6.jpg" alt="kid6">
+                           <h4 class="card-title">Спортивный костюм</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/kids/image7.jpg" alt="kid7">
+                           <h4 class="card-title">Спортивные шорты</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                        <div class="card">
+                           <img src="./assest/img/kids/image8.jpg" alt="kid8">
+                           <h4 class="card-title">Спортивные кроссовки</h4>
+                           <p class="card-date">22.05.2023</p>
+                           <button class="button card-button">Купить</button>
+                        </div>
+                     </div>
+                  </div>
             </div>
          </section>
       </div>
    </main>
-
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-inner">
+            <div class="footer-logo">
+               <a href="">
+                  <img src="./assest/img/logo_footer.svg" alt="logo_footer">
+               </a>
+            </div>
+            <div class="footer-nav">
+               <ul class="footer-list">
+                  <li class="footer-list-item footer-list-item-title" footer-list-item-title>Основные ссылки</li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="">О компании</a></li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="">Каталог</a></li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="#notification">Доставка</a></li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="">Оплата</a></li>
+               </ul>
+               <ul class="footer-list">
+                  <li class="footer-list-item footer-list-item-title" footer-list-item-title>Категории</li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="#man">Мужская одежда</a></li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="#women">Женская одежда</a></li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="#kids">Детская одежда</a></li>
+               </ul>
+               <ul class="footer-list">
+                  <li class="footer-list-item footer-list-item-title" footer-list-item-title>Социальные сети</li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="">VK.com</a></li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="">Facebook</a></li>
+                  <li class="footer-list-item"><a class="footer-list-link" href="">Instagram</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div class="cover-screen"></div> 
+   <div class="scroll-btn">
+      <img class="scroll-btn-image" src="./assest/img/ico/up-arrow.png" alt="up-arrow">
+   </div>
+   <script src="./pages/js/burgerMenu.js"></script>
+   <script src="./pages/js/scrollUp.js"></script>
+   <script src="./pages/js/switch.js"></script>
    <script src="./pages/js/card.js" type="module"></script>
    <script src="./pages/js/data.js" type="module"></script>
    <script src="./pages/js/slider.js" type="module"></script>

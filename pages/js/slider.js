@@ -48,16 +48,6 @@ const resize = () => {
 }
 window.addEventListener('resize', resize);
 
-slider.addEventListener('click', e => {
-   const card = e.target.closest('.slider__card');
-  // Если нажали мимо карточки, то прерываю функцию
-   if (!card) return;
-  // Получаю имя (title) с карточки
-   const name = card.children[1].innerHTML,
-    // Нахожу по имени нужный объект с данными на питомца
-   data = pets.filter(item => item.name === name)[0];
-});
-
 // Заполняем массив числами
 function addNumberForArray(value) {
    const result = [];
