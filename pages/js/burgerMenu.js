@@ -1,6 +1,6 @@
 const burgerBtn = document.querySelector('.header-burger');
 const burgerMenu = document.querySelector('.burger-menu');
-const burgerMenuLinks = document.querySelector('.burger-list');
+const burgerMenuLinks = document.querySelectorAll('.burger-item');
 const coverScreen = document.querySelector('.cover-screen');
 
 let isBurgerMenuOpen = false;

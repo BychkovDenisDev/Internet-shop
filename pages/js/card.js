@@ -13,7 +13,7 @@ export class Card {
       <img class="slider-image" src=${this.src} alt=${this.title}>
       <h4 class="slider-text">${this.title}</h4>
       <p class="slider-date">${this.date}</p>
-      <button class="button slider-button">Купить</button>
+      <button class="button slider-button card-button">Купить</button>
    `;
    this.parentSelector.append(element);
    }

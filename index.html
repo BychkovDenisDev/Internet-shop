@@ -18,7 +18,7 @@
       <header class="header">
          <div class="container">
             <div class="header-inner">
-               <div header-logo>
+               <div class="header-logo">
                   <a href="">
                      <img src="./assest/img/logo.svg" alt="logo">
                   </a>
@@ -318,11 +318,38 @@
    <div class="scroll-btn">
       <img class="scroll-btn-image" src="./assest/img/ico/up-arrow.png" alt="up-arrow">
    </div>
-   <script src="./pages/js/burgerMenu.js"></script>
-   <script src="./pages/js/scrollUp.js"></script>
-   <script src="./pages/js/switch.js"></script>
+   <div class="modal">
+      <form action="#" method="post" class="form-content">
+         <div class="content-number">
+            <p class="content-title">Укажите количество:</p>
+            <p><input type="number" size="3" name="num" min="1" max="10" value="1" class="input-number"></p>
+         </div>
+         <div class="content-raduobtn">
+            <p class="content-title">Укажите цвет:</p>
+            <p class="raduobtn"><input class="raduobtn-input" type="radio" name="color" value="red">Красный</p>
+            <p class="raduobtn"><input class="raduobtn-input" type="radio" name="color" value="black">Черный</p>
+            <p class="raduobtn"><input class="raduobtn-input" type="radio" name="color" value="white">Белый</p>
+            <p class="raduobtn"><input class="raduobtn-input" type="radio" name="color" value="blue">Синий</p>
+         </div>
+         <div class="content-text">
+            <p class="content-title">Укажите комментарий:</p>
+            <textarea placeholder="Поле для ввода комментария..." name="text" maxlength="2000" class="content-comment"></textarea>
+         </div>
+         <div class="content-button">
+            <button type="button" class="modal-buy-btn">Купить</button>
+            <button type="button" class="modal-close-btn">
+               <span class="modal-line modal-line-first"></span>
+               <span class="modal-line modal-line-second">
+            </span></button>
+         </div>
+      </form>
+   </div>
    <script src="./pages/js/card.js" type="module"></script>
    <script src="./pages/js/data.js" type="module"></script>
    <script src="./pages/js/slider.js" type="module"></script>
+   <script src="./pages/js/burgerMenu.js"></script>
+   <script src="./pages/js/scrollUp.js"></script>
+   <script src="./pages/js/switch.js"></script>
+   <script src="./pages/js/modalWindow.js" type="module"></script>
 </body>
 </html>
